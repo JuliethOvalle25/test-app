@@ -2,7 +2,12 @@
 
 ## Project Overview
 
-[TO BE PROVIDED]
+**Quiz CLI** is an interactive command-line quiz game for learning and practicing programming concepts (primarily JavaScript/Node.js).
+
+The app:
+- Loads question categories from a local JSON file (`test-app/test-app/data/questions.json`)
+- Prompts the user to pick a category and question count
+- Runs a scored, multiple-choice quiz session in the terminal
 
 ---
 
