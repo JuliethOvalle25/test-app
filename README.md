@@ -220,7 +220,12 @@ If you add tests later, common conventions are:
 
 ## Deployment
 
-[TO BE PROVIDED]
+No deployment configuration is included. Typical distribution options for a CLI like this are:
+
+- Publish to npm and expose a `bin` entry in `package.json`.
+- Package as a standalone binary using tools like `pkg`.
+
+[TO BE PROVIDED] if deployment/publishing is desired.
 
 ---
 
