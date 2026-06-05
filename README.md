@@ -203,7 +203,7 @@ npm start
 
 ## API Overview
 
-[TO BE PROVIDED]
+Not applicable (no HTTP API). This is a local, interactive CLI.
 
 ---
 
