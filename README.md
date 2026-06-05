@@ -256,4 +256,5 @@ Notes:
 
 ## Notes
 
-[TO BE PROVIDED]
+- The repository includes `test-app/__MACOSX/` and `.DS_Store` artifacts; they are not used by the application and can be removed.
+- `index.js` includes a `#!/usr/bin/env node` shebang; however, `package.json` does not currently expose a `bin` entry, so it’s run via `node index.js` / `npm start`.
