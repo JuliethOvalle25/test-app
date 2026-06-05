@@ -37,7 +37,29 @@ This is a small Node.js CLI application (ES Modules) with a simple separation of
 
 ## Technology Stack
 
-[TO BE PROVIDED]
+### Languages
+
+- JavaScript (Node.js)
+
+### Frameworks
+
+- None
+
+### Libraries
+
+- Node.js built-ins: `readline`, `fs/promises`, `path`, `url`
+
+### Databases
+
+- None (local JSON file used as the question store)
+
+### Infrastructure
+
+- None
+
+### External Integrations
+
+- None
 
 ---
 
