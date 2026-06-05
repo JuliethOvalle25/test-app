@@ -136,7 +136,24 @@ repository-root/
 
 ## Setup Instructions
 
-[TO BE PROVIDED]
+### Installation
+
+From the repository root:
+
+```bash
+cd test-app/test-app
+npm install
+```
+
+> Note: this project currently has **no external dependencies**, so `npm install` is effectively a no-op, but it keeps standard Node workflows.
+
+### Configuration
+
+No environment variables or external configuration are required.
+
+To add/edit questions, update:
+
+- `test-app/test-app/data/questions.json`
 
 ---
 
