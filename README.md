@@ -185,7 +185,19 @@ No build step is required (plain Node.js execution).
 
 ## Usage Examples
 
-[TO BE PROVIDED]
+### Start the quiz
+
+```bash
+npm start
+```
+
+### Typical flow
+
+1. Choose a category (numbered menu)
+2. Choose number of questions (All / 3 / 5)
+3. Answer each question by entering the option number
+4. Review your final score and any incorrect answers
+5. Confirm whether to play again (y/n)
 
 ---
 
