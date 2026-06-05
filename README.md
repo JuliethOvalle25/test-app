@@ -209,7 +209,12 @@ Not applicable (no HTTP API). This is a local, interactive CLI.
 
 ## Testing
 
-[TO BE PROVIDED]
+- Test runner: Node.js built-in test runner (`node --test`) configured in `package.json`.
+- Current state: no `test` directory or `*.test.js` files were found, so the test command will likely report **0 tests**.
+
+If you add tests later, common conventions are:
+- `test/**/*.test.js` or `tests/**/*.test.js`
+- `src/**/*.test.js`
 
 ---
 
