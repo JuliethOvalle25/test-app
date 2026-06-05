@@ -231,7 +231,26 @@ No deployment configuration is included. Typical distribution options for a CLI 
 
 ## Additional Details
 
-[TO BE PROVIDED]
+### Question format
+
+Each question in `data/questions.json` follows this shape:
+
+```json
+{
+  "question": "...",
+  "options": ["...", "..."],
+  "answer": 0,
+  "explanation": "..." 
+}
+```
+
+Notes:
+- `answer` is a **0-based** index into `options` (e.g., `2` means the 3rd option).
+- `explanation` is optional and shown after the user answers.
+
+### Randomization
+
+`src/quiz.js` shuffles the quiz questions for each run using a Fisher–Yates shuffle.
 
 ---
 
