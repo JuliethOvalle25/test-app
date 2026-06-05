@@ -159,7 +159,27 @@ To add/edit questions, update:
 
 ## Getting Started
 
-[TO BE PROVIDED]
+### Running the Application
+
+```bash
+cd test-app/test-app
+npm start
+```
+
+This runs `node index.js`.
+
+### Running Tests
+
+```bash
+cd test-app/test-app
+npm test
+```
+
+> The repository defines the script `node --test`, but no test files were found in the current codebase.
+
+### Building the Application
+
+No build step is required (plain Node.js execution).
 
 ---
 
