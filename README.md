@@ -65,7 +65,29 @@ This is a small Node.js CLI application (ES Modules) with a simple separation of
 
 ## File Structure
 
-[TO BE PROVIDED]
+```text
+repository-root/
+└── test-app/
+    ├── __MACOSX/                # Metadata artifacts (can be removed)
+    └── test-app/
+        ├── index.js             # CLI entry point
+        ├── package.json         # Node package manifest
+        ├── data/
+        │   └── questions.json   # Quiz categories + question bank
+        └── src/
+            ├── colors.js        # ANSI color/styling helpers
+            ├── input.js         # readline wrappers (select/confirm/etc.)
+            └── quiz.js          # Quiz class (shuffle, scoring, results)
+```
+
+### Directory Description
+
+| Path | Description |
+|------|-------------|
+| `test-app/test-app/index.js` | Program entry point; loads questions and runs the interactive loop |
+| `test-app/test-app/src/` | Core modules for input handling, quiz logic, and terminal styling |
+| `test-app/test-app/data/questions.json` | Question data organized by categories |
+| `test-app/__MACOSX/` | macOS archive metadata committed to repo (non-functional) |
 
 ---
 
