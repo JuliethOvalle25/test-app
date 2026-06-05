@@ -13,7 +13,13 @@ The app:
 
 ## Features
 
-[TO BE PROVIDED]
+- Interactive terminal UI using Node.js `readline`
+- Category selection (e.g., *JavaScript Basics*, *Node.js Fundamentals*, *General Programming*) loaded from JSON
+- Configurable quiz length (All / 3 / 5 questions, depending on category size)
+- Randomized question order (Fisher–Yates shuffle)
+- Immediate feedback after each answer (correct/incorrect + correct option)
+- Optional per-question explanations displayed after answering (when present)
+- Final score summary with performance message and review of incorrect answers
 
 ---
 
