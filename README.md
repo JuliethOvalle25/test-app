@@ -129,7 +129,8 @@ repository-root/
 
 ## Prerequisites
 
-[TO BE PROVIDED]
+- **Node.js >= 18** (as specified in `package.json` `engines.node`)
+- npm (bundled with Node.js)
 
 ---
 
