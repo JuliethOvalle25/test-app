@@ -25,7 +25,13 @@ The app:
 
 ## Architecture Overview
 
-[TO BE PROVIDED]
+This is a small Node.js CLI application (ES Modules) with a simple separation of concerns:
+
+- **Entry point (`index.js`)**: loads question data, drives the main game loop, and coordinates prompts.
+- **Input layer (`src/input.js`)**: wraps `readline` to provide promise-based prompts (`select`, `confirm`, `pressEnter`).
+- **Domain/game logic (`src/quiz.js`)**: the `Quiz` class handles shuffling, scoring, progress, and result reporting.
+- **Presentation (`src/colors.js`)**: ANSI styling helpers used across the CLI output.
+- **Data (`data/questions.json`)**: question bank organized by category.
 
 ---
 
