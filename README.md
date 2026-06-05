@@ -93,7 +93,37 @@ repository-root/
 
 ## Key Modules and Components
 
-[TO BE PROVIDED]
+### `index.js`
+
+- Loads `data/questions.json` via `fs/promises.readFile`.
+- Presents category and question-count selection.
+- Creates a `Quiz` instance and iterates until `quiz.isComplete`.
+- Shows results and prompts to play again.
+
+### `src/quiz.js` (`Quiz` class)
+
+- Shuffles incoming questions.
+- Tracks `currentIndex`, `score`, and an `answers` audit trail.
+- `askQuestion(rl)`: prompts the user, checks correctness, prints feedback/explanation.
+- `showResults()`: prints summary + a review list of incorrect questions.
+
+### `src/input.js`
+
+- Promise-based wrappers around `readline`.
+- `select()` renders a numbered list and validates numeric choice.
+- `confirm()` handles y/n prompts.
+- `pressEnter()` blocks until Enter.
+
+### `src/colors.js`
+
+- ANSI escape code helpers (`success`, `error`, `warning`, etc.) used to style output.
+
+### `data/questions.json`
+
+- Structure:
+  - `categories` object keyed by category id
+  - each category has a `name` and `questions[]`
+  - each question includes: `question`, `options[]`, `answer` (0-based index), and optional `explanation`
 
 ---
 
